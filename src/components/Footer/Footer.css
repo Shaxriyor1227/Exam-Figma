@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #3f3f3f;
+  color: #d4d4d4;
+  font-family: 'Inter', sans-serif;
+  padding-top: 60px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px 60px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr 1.2fr;
+  gap: 48px;
+}
+
+/* ===== BRAND ===== */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer__logo-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.footer__logo-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.footer__tagline {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #aaaaaa;
+  margin-bottom: 24px;
+  max-width: 220px;
+}
+
+/* ===== SOCIAL BUTTONS ===== */
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #c0392b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.footer__social-btn:hover {
+  background-color: #e74c3c;
+  transform: translateY(-2px);
+}
+
+/* ===== NAV COLUMNS ===== */
+.footer__nav-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav-list li a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  font-weight: 300;
+  transition: color 0.2s ease;
+}
+
+.footer__nav-list li a:hover {
+  color: #ffffff;
+}
+
+/* ===== INSTAGRAM GRID ===== */
+.footer__instagram-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.footer__instagram-item {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.footer__instagram-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer__instagram-item:hover img {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* ===== BOTTOM BAR ===== */
+.footer__bottom {
+  border-top: 1px solid #555555;
+  text-align: center;
+  padding: 20px 32px;
+}
+
+.footer__bottom p {
+  font-size: 0.8rem;
+  color: #888888;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer__logo-text {
+    font-size: 1.4rem;
+  }
+}

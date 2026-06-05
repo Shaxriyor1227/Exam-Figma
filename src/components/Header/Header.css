@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+header{
+     width: 100%;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Cormorant", serif;
+}
+.logo img{
+    width: 50px;
+}
+.logo h1{
+    color: #474747;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+nav ul a{
+    color: #474747;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+}
+
+nav ul a:hover{
+    color: #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
+.active{
+    color: #474747;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #D4D4D4;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.active:hover{
+    background-color: #B8B8B8;
+    outline: none;
+}
+
+button{
+    background-color: white;
+    color:  #474747;
+    border: 2px solid #474747;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+}
+
+button:hover{
+    background-color: #2C2F24;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .logo h1{
+        font-size: 32px;
+    }
+
+    nav ul{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul a,
+    .active{
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    button{
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo{
+        gap: 8px;
+    }
+
+    .logo h1{
+        font-size: 28px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul a,
+    .active{
+        font-size: 15px;
+        padding: 10px 18px;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    button{
+        width: 100%;
+        max-width: 260px;
+        padding: 12px 0;
+    }
+}

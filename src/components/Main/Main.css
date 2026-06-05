@@ -1,0 +1,66 @@
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("../../assets/main.png");
+    background-size: cover;
+}
+main h1{
+    width: 50%;
+    text-align: center;
+    font-size: 100px;
+    color: #2C2F24;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+main p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #2C2F24;
+    text-align: center;
+}
+
+.main-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.main-btn button:first-child{
+    padding: 18px 28px;
+    font-size: 16px;
+    background-color: #AD343E;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    border-radius: 25px;
+}
+
+.main-btn button:first-child:hover{
+    background-color: white;
+    color: #AD343E;
+    border: 2px solid #AD343E;
+}
+
+.main-btn button:last-child:hover{
+    background-color: #2C2F24;
+    color: white;
+}
+
+.main-btn button:last-child{
+    padding: 18px 28px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #182226;
+    color: #182226;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    font-family: sans-serif;
+    border-radius: 25px;
+}
