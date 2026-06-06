@@ -30,7 +30,7 @@ const Healthy = () => {
           </div>
           
           <div className="contact-card">
-            <h3 className="contact-title" style={{ fontFamily: 'sans-serif' }}>Come and visit us</h3>
+            <h3 className="contact-title" style={{fontSize:"22px", color:"white", fontFamily:"sans-serif"}}>Come and visit us</h3>
             
             <div className="contact-item">
               <div className="contact-icon">

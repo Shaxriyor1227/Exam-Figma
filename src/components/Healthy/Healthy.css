@@ -47,24 +47,7 @@
   font-family:sans-serif; 
 }
 
-.contact-title {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #ffffff;
-  font-family: 'Playfair Display', Georgia, serif;
-}
 
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 18px;
-}
-
-.contact-item:last-child {
-  margin-bottom: 0;
-}
 
 .contact-icon {
   flex-shrink: 0;
