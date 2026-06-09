@@ -94,13 +94,13 @@ const Contact = () => {
           <form className="contact-form" onSubmit={handleSubmit} noValidate>
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="name" className="form-label">Name</label>
+                <label htmlFor="name" className="form-label">Ism</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className={`form-input ${errors.name ? 'error' : ''}`}
-                  placeholder="Enter your name"
+                  placeholder="Ismingizni kiriting"
                   value={formData.name}
                   onChange={handleChange}
                 />
@@ -114,7 +114,7 @@ const Contact = () => {
                   id="email"
                   name="email"
                   className={`form-input ${errors.email ? 'error' : ''}`}
-                  placeholder="Enter email address"
+                  placeholder="Email manzilingizni kiriting"
                   value={formData.email}
                   onChange={handleChange}
                 />
@@ -123,13 +123,13 @@ const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="subject" className="form-label">Subject</label>
+              <label htmlFor="subject" className="form-label">Mavzu</label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
                 className={`form-input ${errors.subject ? 'error' : ''}`}
-                placeholder="Write a subject"
+                placeholder="Mavzuni yozing"
                 value={formData.subject}
                 onChange={handleChange}
               />
@@ -137,12 +137,12 @@ const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message" className="form-label">Message</label>
+              <label htmlFor="message" className="form-label">Xabar</label>
               <textarea
                 id="message"
                 name="message"
                 className={`form-textarea ${errors.message ? 'error' : ''}`}
-                placeholder="Write your message"
+                placeholder="Xabaringizni yozing"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -151,7 +151,7 @@ const Contact = () => {
             </div>
 
             <button type="submit" className="submit-btn">
-              Send
+              Yuborish
             </button>
           </form>
         </div>
