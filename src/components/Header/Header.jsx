@@ -22,7 +22,9 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <button>Book A Table</button>
+            <NavLink to="/book" className="book-button">
+                <button>Book A Table</button>
+            </NavLink>
         </header>
     </div>
   )
