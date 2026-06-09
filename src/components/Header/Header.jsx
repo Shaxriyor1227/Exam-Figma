@@ -1,13 +1,14 @@
 import React from 'react'
 import './Header.css'
 import logo from '../../assets/logo.png'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div>
         <header>
-            <div className="logo">
+        
+           <div className="logo">
                 <img src={logo} alt="Logo" />
                 <h1>Bistro Bliss</h1>
             </div>
@@ -22,9 +23,9 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <NavLink to="/book" className="book-button">
+          
                 <button>Book A Table</button>
-            </NavLink>
+            
         </header>
     </div>
   )
