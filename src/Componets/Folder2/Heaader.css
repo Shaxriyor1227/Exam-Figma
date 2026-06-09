@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #F9F9F7;
+    --text: #2f2f2f;
+    --muted: #6f6f6f;
+    --accent: #e6efe6;
+}
+
+header{
+    background: var(--bg);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.header-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 22px;
+}
+
+.header-container h1{
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 24px;
+    letter-spacing: 0.4px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+nav a{
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 14px;
+    transition: color 150ms ease, background 150ms ease, transform 120ms ease;
+    border-radius: 20px;
+}
+
+/* On hover make any link look like the Pages pill */
+nav a:hover{
+    color: #2a2a2a;
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* special pill for Pages (4th item) */
+.header-container nav ul li:nth-child(4) a{
+    background: var(--accent);
+    color: #2a2a2a;
+    border-radius: 20px;
+    padding: 8px 14px;
+}
+
+.btn button{
+    padding: 8px 18px;
+    border-radius: 24px;
+    border: 1px solid var(--text);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 150ms ease, color 150ms ease, transform 120ms ease;
+}
+
+.btn button:hover{
+    background: var(--text);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px){
+    .header-container{
+        padding: 14px 16px;
+        gap: 14px;
+    }
+    nav ul{ gap: 14px; }
+}
+
+@media (max-width: 600px){
+    .header-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .btn button{
+        width: 160px;
+    }
+}
+
+@media (max-width: 380px){
+    .header-container h1{ font-size: 20px; }
+    nav a{ font-size: 13px; }
+    .btn button{ width: 100%; }
+}
