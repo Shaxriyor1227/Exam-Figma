@@ -1,0 +1,98 @@
+.about-container4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-logo2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-logo2 h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  font-weight: 400;
+  color: #2c2f24;
+}
+
+.about-user {
+  width: 100%;
+  height: 450px;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-left: 20px;
+  padding:0 50px;
+
+}
+
+.about-user1 {
+  width: 400px;
+
+  background: #f9f9f7;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.about-usertext h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ad343e;
+  margin-bottom: 24px;
+}
+
+.about-usertext p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #414536;
+}
+
+.x {
+  width: 100%;
+  height: 1px;
+  background: #dbdfd0;
+  margin: 32px 0;
+}
+
+.about-img4 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.about-img4 img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.img-text h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2f24;
+}
+
+.img-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737865;
+}

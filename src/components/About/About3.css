@@ -1,0 +1,64 @@
+.about-container3 {
+  width: 100%;
+  height: 90vh;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #F9F9F7;
+  padding: 50px;
+}
+
+.about-text3 {
+  width: 50%;
+}
+
+.about-logo h1 {
+  font-size: 48px;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.about-logo p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.about-card3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-facts {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 35px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.about-facts h2 {
+  font-size: 42px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.about-facts p {
+  font-size: 18px;
+  color: #555;
+}
+
+.about-facts2 {
+  width: 45%;
+}
+
+.about-facts2 img {
+  width: 100%;
+  height: 650px;
+  display: block;
+  border-radius: 12px;
+}
